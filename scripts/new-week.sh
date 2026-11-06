@@ -9,7 +9,7 @@ fi
 
 WEEK="$1"; SLUG="$2"; V1="$3"; V2="$4"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-BASE="$ROOT/allsafe/week-$WEEK-$SLUG"
+BASE="$ROOT/weeks/week-$WEEK-$SLUG"
 
 for V in "$V1" "$V2"; do
   mkdir -p "$BASE/$V/artifacts" "$BASE/$V/evidence"

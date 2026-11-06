@@ -18,8 +18,8 @@ Two vulnerabilities a week. Every step documented. Every artifact published.
 
 This repository documents my journey to sharpen my Android application security skills. Each week I take **two vulnerabilities** from a deliberately vulnerable app, exploit them end to end, and publish the full methodology, tooling, scripts, and evidence, so anyone can reproduce the work and learn from it.
 
-- **Phase 1:** [Allsafe](https://github.com/t0thkr1s/allsafe) (native Android)
-- **Phase 2:** DVMH / hybrid app testing (WebView, bridges, cross-platform frameworks)
+- **Target:** [Allsafe](https://github.com/t0thkr1s/allsafe), a deliberately vulnerable native Android app
+- **Coming later:** DVMA (hybrid app) will have its own separate repository
 
 Each write-up is also published as a LinkedIn post and a longer Medium article (links in the tracker below).
 
@@ -31,15 +31,14 @@ All testing is performed **only** against intentionally vulnerable applications 
 
 | Week | Vulnerabilities | MASVS Area | Write-up | LinkedIn | Medium | Status |
 |:---:|---|---|---|---|---|:---:|
-| 01 | Insecure Logging · Hardcoded Credentials | STORAGE / CRYPTO | [week-01](allsafe/week-01-logging-hardcoded-creds/) | – | – | ⬜ |
-| 02 | Root Detection · Secure Flag Bypass | RESILIENCE / PLATFORM | [week-02](allsafe/week-02-root-detection-secure-flag/) | – | – | ⬜ |
-| 03 | PIN Bypass · Certificate Pinning Bypass | AUTH / NETWORK | [week-03](allsafe/week-03-pin-bypass-cert-pinning/) | – | – | ⬜ |
-| 04 | Insecure Broadcast Receiver · Insecure Service | PLATFORM | [week-04](allsafe/week-04-broadcast-service/) | – | – | ⬜ |
-| 05 | Insecure Content Providers · Deep Link Exploitation | PLATFORM | [week-05](allsafe/week-05-providers-deeplinks/) | – | – | ⬜ |
-| 06 | SQL Injection · Vulnerable WebView | CODE / PLATFORM | [week-06](allsafe/week-06-sqli-webview/) | – | – | ⬜ |
-| 07 | Arbitrary Code Execution · Smali Patching | CODE / RESILIENCE | [week-07](allsafe/week-07-ace-smali/) | – | – | ⬜ |
-| 08 | Native Library Analysis · Series Recap | CODE / RESILIENCE | [week-08](allsafe/week-08-native-recap/) | – | – | ⬜ |
-| 09+ | DVMH hybrid app | TBD | [dvmh-hybrid](dvmh-hybrid/) | – | – | ⬜ |
+| 01 | Insecure Logging · Hardcoded Credentials | STORAGE / CRYPTO | [week-01](weeks/week-01-logging-hardcoded-creds/) | – | – | ⬜ |
+| 02 | Root Detection · Secure Flag Bypass | RESILIENCE / PLATFORM | [week-02](weeks/week-02-root-detection-secure-flag/) | – | – | ⬜ |
+| 03 | PIN Bypass · Certificate Pinning Bypass | AUTH / NETWORK | [week-03](weeks/week-03-pin-bypass-cert-pinning/) | – | – | ⬜ |
+| 04 | Insecure Broadcast Receiver · Insecure Service | PLATFORM | [week-04](weeks/week-04-broadcast-service/) | – | – | ⬜ |
+| 05 | Insecure Content Providers · Deep Link Exploitation | PLATFORM | [week-05](weeks/week-05-providers-deeplinks/) | – | – | ⬜ |
+| 06 | SQL Injection · Vulnerable WebView | CODE / PLATFORM | [week-06](weeks/week-06-sqli-webview/) | – | – | ⬜ |
+| 07 | Arbitrary Code Execution · Smali Patching | CODE / RESILIENCE | [week-07](weeks/week-07-ace-smali/) | – | – | ⬜ |
+| 08 | Native Library Analysis · Series Recap | CODE / RESILIENCE | [week-08](weeks/week-08-native-recap/) | – | – | ⬜ |
 
 > Legend: ⬜ planned · 🟨 in progress · ✅ published
 
@@ -83,14 +82,13 @@ Android_pwned/
 │   └── cheatsheet.md           # Quick adb / frida / objection commands
 ├── templates/                  # Write-up, LinkedIn, Medium templates
 ├── scripts/                    # Reusable helpers (new-week generator, etc.)
-├── allsafe/
-│   └── week-XX-<topic>/
-│       ├── README.md           # Week overview
-│       └── <vuln-name>/
-│           ├── writeup.md      # Full technical write-up
-│           ├── artifacts/      # Frida scripts, payloads, PoC code, patches
-│           └── evidence/       # Screenshots, logs, recordings
-└── dvmh-hybrid/                # Phase 2
+└── weeks/
+    └── week-XX-<topic>/
+        ├── README.md           # Week overview
+        └── <vuln-name>/
+            ├── writeup.md      # Full technical write-up
+            ├── artifacts/      # Frida scripts, payloads, PoC code, patches
+            └── evidence/       # Screenshots, logs, recordings
 ```
 
 ## 📝 Write-up Format
@@ -107,7 +105,7 @@ Every vulnerability write-up uses [templates/writeup-template.md](templates/writ
 #    see docs/lab-setup.md
 
 # 3. Follow any week's write-up and artifacts
-cd allsafe/week-01-logging-hardcoded-creds/
+cd weeks/week-01-logging-hardcoded-creds/
 ```
 
 ## 🤝 Contributing
