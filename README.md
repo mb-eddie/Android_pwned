@@ -114,8 +114,8 @@ Corrections, alternative approaches, and better payloads are welcome. See [CONTR
 
 ## 📣 Follow the Series
 
-- LinkedIn: _add your profile link_
-- Medium: _add your profile link_
+- LinkedIn: https://www.linkedin.com/in/mboya-edgar-acris/
+- Medium: https://medium.com/@eddi.mboya
 
 ## 📚 Credits & References
 
