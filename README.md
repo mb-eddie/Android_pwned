@@ -16,12 +16,12 @@ Two vulnerabilities a week. Every step documented. Every artifact published.
 
 ## 📖 About
 
-This repository documents my journey to sharpen my Android application security skills. Each week I take **two vulnerabilities** from a deliberately vulnerable app, exploit them end to end, and publish the full methodology, tooling, scripts, and evidence, so anyone can reproduce the work and learn from it.
+This repository documents Android application security research in deliberately vulnerable apps. Each track keeps its own weeks, methodology, tooling, and evidence so the work is easy to navigate and reproduce.
 
-- **Target:** [Allsafe](https://github.com/t0thkr1s/allsafe), a deliberately vulnerable native Android app
-- **Coming later:** DVMA (hybrid app) will have its own separate repository
+- **Native Android track:** [Allsafe](allsafe/README.md), a deliberately vulnerable native Android app
+- **Hybrid Android track:** [DVMA](DVMA/README.md), linked to its upstream repository
 
-Each write-up is also published as a LinkedIn post and a longer Medium article (links in the tracker below).
+Each write-up may also be published as a LinkedIn post and a longer Medium article (links in the tracker).
 
 ## ⚠️ Disclaimer
 
@@ -31,14 +31,14 @@ All testing is performed **only** against intentionally vulnerable applications 
 
 | Week | Vulnerabilities | MASVS Area | Write-up | LinkedIn | Medium | Status |
 |:---:|---|---|---|---|---|:---:|
-| 01 | Insecure Logging · Hardcoded Credentials | STORAGE / CRYPTO | [week-01](weeks/week-01-logging-hardcoded-creds/) | – | – | ⬜ |
-| 02 | Root Detection · Secure Flag Bypass | RESILIENCE / PLATFORM | [week-02](weeks/week-02-root-detection-secure-flag/) | – | – | ⬜ |
-| 03 | PIN Bypass · Certificate Pinning Bypass | AUTH / NETWORK | [week-03](weeks/week-03-pin-bypass-cert-pinning/) | – | – | ⬜ |
-| 04 | Insecure Broadcast Receiver · Insecure Service | PLATFORM | [week-04](weeks/week-04-broadcast-service/) | – | – | ⬜ |
-| 05 | Insecure Content Providers · Deep Link Exploitation | PLATFORM | [week-05](weeks/week-05-providers-deeplinks/) | – | – | ⬜ |
-| 06 | SQL Injection · Vulnerable WebView | CODE / PLATFORM | [week-06](weeks/week-06-sqli-webview/) | – | – | ⬜ |
-| 07 | Arbitrary Code Execution · Smali Patching | CODE / RESILIENCE | [week-07](weeks/week-07-ace-smali/) | – | – | ⬜ |
-| 08 | Native Library Analysis · Series Recap | CODE / RESILIENCE | [week-08](weeks/week-08-native-recap/) | – | – | ⬜ |
+| 01 | Insecure Logging · Hardcoded Credentials | STORAGE / CRYPTO | [week-01](allsafe/weeks/week-01-logging-hardcoded-creds/) | – | – | 🟨 |
+| 02 | Root Detection · Secure Flag Bypass | RESILIENCE / PLATFORM | [week-02](allsafe/weeks/week-02-root-detection-secure-flag/) | – | – | ⬜ |
+| 03 | PIN Bypass · Certificate Pinning Bypass | AUTH / NETWORK | [week-03](allsafe/weeks/week-03-pin-bypass-cert-pinning/) | – | – | ⬜ |
+| 04 | Insecure Broadcast Receiver · Insecure Service | PLATFORM | [week-04](allsafe/weeks/week-04-broadcast-service/) | – | – | ⬜ |
+| 05 | Insecure Content Providers · Deep Link Exploitation | PLATFORM | [week-05](allsafe/weeks/week-05-providers-deeplinks/) | – | – | ⬜ |
+| 06 | SQL Injection · Vulnerable WebView | CODE / PLATFORM | [week-06](allsafe/weeks/week-06-sqli-webview/) | – | – | ⬜ |
+| 07 | Arbitrary Code Execution · Smali Patching | CODE / RESILIENCE | [week-07](allsafe/weeks/week-07-ace-smali/) | – | – | ⬜ |
+| 08 | Native Library Analysis · Series Recap | CODE / RESILIENCE | [week-08](allsafe/weeks/week-08-native-recap/) | – | – | ⬜ |
 
 > Legend: ⬜ planned · 🟨 in progress · ✅ published
 
@@ -52,7 +52,7 @@ All testing is performed **only** against intentionally vulnerable applications 
 | Platform testing | adb, drozer, Android Studio / emulator |
 | Reverse engineering | Ghidra, radare2, smali/baksmali, uber-apk-signer |
 
-Full setup steps: [docs/lab-setup.md](docs/lab-setup.md)
+Allsafe setup steps: [allsafe/docs/lab-setup.md](allsafe/docs/lab-setup.md)
 
 ## 🧭 Methodology
 
@@ -66,34 +66,37 @@ Every vulnerability follows the same repeatable flow, aligned with the [OWASP MA
 6. **Remediation**: secure code and defence-in-depth fixes
 7. **Artifacts**: scripts, hooks, payloads, screenshots
 
-Details: [docs/methodology.md](docs/methodology.md)
+Details: [allsafe/docs/methodology.md](allsafe/docs/methodology.md)
 
 ## 📁 Repository Structure
 
 ```
 Android_pwned/
-├── README.md
+├── README.md                   # Series overview and progress tracker
+├── CONTRIBUTING.md
 ├── DISCLAIMER.md
 ├── LICENSE
-├── docs/
-│   ├── lab-setup.md            # Environment & tooling setup
-│   ├── methodology.md          # Testing flow + MASVS/MASTG mapping
-│   ├── publishing-checklist.md # Pre-publish checks for each week
-│   └── cheatsheet.md           # Quick adb / frida / objection commands
-├── templates/                  # Write-up, LinkedIn, Medium templates
-├── scripts/                    # Reusable helpers (new-week generator, etc.)
-└── weeks/
-    └── week-XX-<topic>/
-        ├── README.md           # Week overview
-        └── <vuln-name>/
-            ├── writeup.md      # Full technical write-up
-            ├── artifacts/      # Frida scripts, payloads, PoC code, patches
-            └── evidence/       # Screenshots, logs, recordings
+├── allsafe/
+│   ├── README.md               # Native Allsafe track overview
+│   ├── docs/                   # Track-specific setup and methodology
+│   ├── templates/              # Track write-up and publishing templates
+│   ├── scripts/                # Track helpers
+│   └── weeks/
+│       └── week-XX-<topic>/
+│           ├── README.md
+│           └── <vuln-name>/
+│               ├── writeup.md
+│               ├── artifacts/
+│               └── evidence/
+└── DVMA/
+    └── README.md               # Link to the separate upstream project
 ```
+
+Keep each track's material under its own directory. Do not create a second parallel copy of the Allsafe week folders.
 
 ## 📝 Write-up Format
 
-Every vulnerability write-up uses [templates/writeup-template.md](templates/writeup-template.md): summary, severity, MASVS mapping, root cause, step-by-step exploitation, PoC, impact, remediation, and references.
+Allsafe vulnerability write-ups use [allsafe/templates/writeup-template.md](allsafe/templates/writeup-template.md): summary, severity, MASVS mapping, root cause, reproducible analysis, impact, remediation, and references.
 
 ## 🚀 Reproduce It Yourself
 
@@ -102,10 +105,10 @@ Every vulnerability write-up uses [templates/writeup-template.md](templates/writ
 #    https://github.com/t0thkr1s/allsafe/releases
 
 # 2. Set up your lab
-#    see docs/lab-setup.md
+#    see allsafe/docs/lab-setup.md
 
 # 3. Follow any week's write-up and artifacts
-cd weeks/week-01-logging-hardcoded-creds/
+cd allsafe/weeks/week-01-logging-hardcoded-creds/
 ```
 
 ## 🤝 Contributing
