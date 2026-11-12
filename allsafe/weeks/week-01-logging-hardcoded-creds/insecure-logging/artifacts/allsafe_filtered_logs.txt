@@ -1,0 +1,25 @@
+11-12 09:27:29.711   288   288 V StorageManagerService: Package infosecadventures.allsafe does not have legacy storage
+11-12 09:28:22.521   288   305 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=infosecadventures.allsafe/.MainActivity bnds=[333,210][542,376]} from uid 10104
+11-12 09:28:22.561   288  1409 D CoreBackPreview: Window{354445a u0 infosecadventures.allsafe/SplashScreen}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@77e4368, mPriority=0}
+11-12 09:28:22.571   288   327 I ActivityManager: Start proc 1661:infosecadventures.allsafe/u0a127 for next-top-activity {infosecadventures.allsafe/infosecadventures.allsafe.MainActivity}
+11-12 09:28:22.578  1661  1661 I entures.allsafe: Late-enabling -Xcheck:jni
+11-12 09:28:22.658  1661  1661 W entures.allsafe: Unexpected CPU variant for x86: x86_64.
+11-12 09:28:22.658  1661  1661 W entures.allsafe: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-12 09:28:22.729  1661  1661 W ziparchive: Unable to open '/data/app/~~9K2Nh7HsTSgBB1cLl6AXfw==/infosecadventures.allsafe-jGPf0OnfjMvmC_qFtwabEg==/base.dm': No such file or directory
+11-12 09:28:22.729  1661  1661 W ziparchive: Unable to open '/data/app/~~9K2Nh7HsTSgBB1cLl6AXfw==/infosecadventures.allsafe-jGPf0OnfjMvmC_qFtwabEg==/base.dm': No such file or directory
+11-12 09:28:23.146  1661  1661 V GraphicsEnvironment: ANGLE Developer option for 'infosecadventures.allsafe' set to: 'default'
+11-12 09:28:23.146  1661  1661 V GraphicsEnvironment: ANGLE GameManagerService for infosecadventures.allsafe: false
+11-12 09:28:23.293  1661  1661 W entures.allsafe: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+11-12 09:28:23.421   288  1409 D CoreBackPreview: Window{7433daf u0 infosecadventures.allsafe/infosecadventures.allsafe.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@849a945, mPriority=0}
+11-12 09:28:23.523   288   315 W ziparchive: Unable to open '/data/app/~~9K2Nh7HsTSgBB1cLl6AXfw==/infosecadventures.allsafe-jGPf0OnfjMvmC_qFtwabEg==/base.dm': No such file or directory
+11-12 09:28:23.524   288   315 I ActivityTaskManager: Displayed infosecadventures.allsafe/.MainActivity: +1s2ms
+11-12 09:28:23.912   288   305 D CoreBackPreview: Window{354445a u0 infosecadventures.allsafe/SplashScreen EXITING}: Setting back callback null
+11-12 09:28:23.913   288  1409 W InputManager-JNI: Input channel object '354445a infosecadventures.allsafe/SplashScreen (client)' was disposed without first being removed with the input manager!
+11-12 09:28:29.324  1661  1705 D ProfileInstaller: Installing profile for infosecadventures.allsafe
+11-12 09:48:41.389  1661  1673 I entures.allsafe: JIT allocated 55KB for compiled code of void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+11-12 09:49:15.244   288  1409 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=infosecadventures.allsafe/.ui.activities.InsecureLoggingActivity} from uid 2000
+11-12 09:50:20.149   288   305 D CoreBackPreview: Window{7433daf u0 infosecadventures.allsafe/infosecadventures.allsafe.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ddddd4c, mPriority=0}
+11-12 09:50:42.147   288  1409 D CoreBackPreview: Window{7433daf u0 infosecadventures.allsafe/infosecadventures.allsafe.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@28dfa5a, mPriority=0}
+11-12 09:50:45.528   288   637 D CoreBackPreview: Window{7433daf u0 infosecadventures.allsafe/infosecadventures.allsafe.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1a43414, mPriority=0}
+11-12 09:53:36.191  1073  1218 W StorageManager: Failed to update quota type for /storage/emulated/allsafelogs.txt
+11-12 09:59:55.022  1073  1218 W StorageManager: Failed to update quota type for /storage/emulated/allsafe_filtered_logs.txt
