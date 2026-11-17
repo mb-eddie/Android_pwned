@@ -31,14 +31,16 @@ All testing is performed **only** against intentionally vulnerable applications 
 
 | Week | Vulnerabilities | MASVS Area | Write-up | LinkedIn | Medium | Status |
 |:---:|---|---|---|---|---|:---:|
-| 01 | Insecure Logging · Hardcoded Credentials | STORAGE / CRYPTO | [week-01](allsafe/weeks/week-01-logging-hardcoded-creds/) | – | – | 🟨 |
-| 02 | Root Detection · Secure Flag Bypass | RESILIENCE / PLATFORM | [week-02](allsafe/weeks/week-02-root-detection-secure-flag/) | – | – | ⬜ |
-| 03 | PIN Bypass · Certificate Pinning Bypass | AUTH / NETWORK | [week-03](allsafe/weeks/week-03-pin-bypass-cert-pinning/) | – | – | ⬜ |
-| 04 | Insecure Broadcast Receiver · Insecure Service | PLATFORM | [week-04](allsafe/weeks/week-04-broadcast-service/) | – | – | ⬜ |
-| 05 | Insecure Content Providers · Deep Link Exploitation | PLATFORM | [week-05](allsafe/weeks/week-05-providers-deeplinks/) | – | – | ⬜ |
-| 06 | SQL Injection · Vulnerable WebView | CODE / PLATFORM | [week-06](allsafe/weeks/week-06-sqli-webview/) | – | – | ⬜ |
-| 07 | Arbitrary Code Execution · Smali Patching | CODE / RESILIENCE | [week-07](allsafe/weeks/week-07-ace-smali/) | – | – | ⬜ |
-| 08 | Native Library Analysis · Series Recap | CODE / RESILIENCE | [week-08](allsafe/weeks/week-08-native-recap/) | – | – | ⬜ |
+| 01 | Insecure Logging · Hardcoded Credentials | STORAGE / CRYPTO | [week-01](allsafe/weeks/week-01-logging-hardcoded-creds/) | – | – | ✅ |
+| 02 | Firebase Database · Insecure Shared Preferences | STORAGE | [week-02](allsafe/weeks/week-02-firebase-database-shared-preferences/) | – | – | 🟨 |
+| 03 | SQL Injection · PIN Bypass | CODE / AUTH | [week-03](allsafe/weeks/week-03-sql-injection-pin-bypass/) | – | – | ⬜ |
+| 04 | Root Detection · Secure Flag Bypass | RESILIENCE / PLATFORM | [week-04](allsafe/weeks/week-04-root-detection-secure-flag-bypass/) | – | – | ⬜ |
+| 05 | Deep Link Exploitation · Insecure Broadcast Receiver | PLATFORM | [week-05](allsafe/weeks/week-05-deep-link-broadcast-receiver/) | – | – | ⬜ |
+| 06 | Vulnerable WebView · Certificate Pinning Bypass | PLATFORM / NETWORK | [week-06](allsafe/weeks/week-06-webview-certificate-pinning/) | – | – | ⬜ |
+| 07 | Weak Cryptography · Insecure Service | CRYPTO / PLATFORM | [week-07](allsafe/weeks/week-07-weak-cryptography-insecure-service/) | – | – | ⬜ |
+| 08 | Object Serialization · Insecure Content Providers | CODE / PLATFORM | [week-08](allsafe/weeks/week-08-object-serialization-insecure-providers/) | – | – | ⬜ |
+| 09 | Arbitrary Code Execution · Native Library Analysis | CODE / RESILIENCE | [week-09](allsafe/weeks/week-09-arbitrary-code-execution-native-library/) | – | – | ⬜ |
+| 10 | Smali Patching · Series Recap | CODE / RESILIENCE | [week-10](allsafe/weeks/week-10-smali-patching-series-recap/) | – | – | ⬜ |
 
 > Legend: ⬜ planned · 🟨 in progress · ✅ published
 
