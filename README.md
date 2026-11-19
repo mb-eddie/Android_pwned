@@ -81,7 +81,6 @@ Android_pwned/
 ├── allsafe/
 │   ├── README.md               # Native Allsafe track overview
 │   ├── docs/                   # Track-specific setup and methodology
-│   ├── templates/              # Track write-up and publishing templates
 │   ├── scripts/                # Track helpers
 │   └── weeks/
 │       └── week-XX-<topic>/
