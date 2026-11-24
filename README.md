@@ -33,7 +33,7 @@ All testing is performed **only** against intentionally vulnerable applications 
 |:---:|---|---|---|---|---|:---:|
 | 01 | Insecure Logging · Hardcoded Credentials | STORAGE / CRYPTO | [week-01](allsafe/weeks/week-01-logging-hardcoded-creds/) | – | – | ✅ |
 | 02 | Firebase Database · Insecure Shared Preferences | STORAGE | [week-02](allsafe/weeks/week-02-firebase-database-shared-preferences/) | – | – | ✅ |
-| 03 | SQL Injection · PIN Bypass | CODE / AUTH | [week-03](allsafe/weeks/week-03-sql-injection-pin-bypass/) | – | – | ⬜ |
+| 03 | SQL Injection · PIN Bypass | CODE / AUTH | [week-03](allsafe/weeks/week-03-sql-injection-pin-bypass/) | – | – | 🟨 |
 | 04 | Root Detection · Secure Flag Bypass | RESILIENCE / PLATFORM | [week-04](allsafe/weeks/week-04-root-detection-secure-flag-bypass/) | – | – | ⬜ |
 | 05 | Deep Link Exploitation · Insecure Broadcast Receiver | PLATFORM | [week-05](allsafe/weeks/week-05-deep-link-broadcast-receiver/) | – | – | ⬜ |
 | 06 | Vulnerable WebView · Certificate Pinning Bypass | PLATFORM / NETWORK | [week-06](allsafe/weeks/week-06-webview-certificate-pinning/) | – | – | ⬜ |
