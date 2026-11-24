@@ -2,8 +2,8 @@
 
 | # | Vulnerability | Write-up | Artifacts |
 |---|---|---|---|
-| 1 | sql-injection | [writeup](sql-injection/writeup.md) | [artifacts](sql-injection/artifacts/) |
-| 2 | pin-bypass | [writeup](pin-bypass/writeup.md) | [artifacts](pin-bypass/artifacts/) |
+| 1 | sql-injection | [Writeup](sql-injection/writeup.md) | [artifacts](sql-injection/artifacts/) |
+| 2 | pin-bypass | [Writeup](pin-bypass/writeup.md) | [artifacts](pin-bypass/artifacts/) |
 
 ## Links
 - LinkedIn:
