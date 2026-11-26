@@ -1,0 +1,10 @@
+# Virtual environment created at the repository root.
+/bin/
+/fish/
+/include/
+/lib/
+/lib64
+/pyvenv.cfg
+
+# Download this binary separately; GitHub rejects files over 100 MB.
+/allsafe/weeks/week-03-sql-injection-pin-bypass/pin-bypass/artifacts/frida-server
